@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.cv {
+  width: 800px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +41,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hide {
+  display: none;
 }
