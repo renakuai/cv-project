@@ -2,47 +2,177 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .cv {
   width: 800px;
+  font-family: var(--body-text);
   margin: auto;
   margin-top: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 1px 8px rgba(183, 183, 183, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.cv > * {
+  font-size: 0.9rem;
+}
+
+.PageTitle {
+  font-family: var(--body-header);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.Title {
+  font-family: var(--body-header);
+  font-weight: 500;
+  font-size: 1rem;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.EnteredValue {
+  display: flex;
+  flex-direction: row;
+}
+
+.Group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.Read {
+  display: flex;
+  flex-direction: column;
+}
+
+.ReadGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Entry {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.InputField {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+}
+
+label,
+.Label {
+  color: #8f8f8f;
+  width: 150px;
+}
+
+.Write {
+  padding: 1rem;
+  border: 1.5px solid #3b84f3;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+button.Add {
+  border: 1px solid #3b6ff3;
+  color: #3b6ff3;
+  background-color: #fff;
+  border-radius: 4px;
+  font-family: var(--body-text);
+  font-size: 0.9rem;
+  margin: 0;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button.Add:hover,
+button.Save:hover {
+  background-color: #e1eaff;
+}
+
+button.Delete:hover,
+button.Edit:hover {
+  color: #8fafff;
+}
+
+button.Delete,
+button.Edit {
+  border: 0px;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  color: #3b6ff3;
+  background-color: #fff;
+  border-radius: 4px;
+  font-family: var(--body-text);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button.Save {
+  border: 1px solid #3b6ff3;
+  color: #fff;
+  background-color: #3b6ff3;
+  border-radius: 4px;
+  font-family: var(--body-text);
+  font-size: 0.9rem;
+  margin: 0;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+}
+
+.Personal > .Title {
+  margin-bottom: 0.75rem;
+}
+
+.EditBtn,
+.EditBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  height: 20px;
+}
+
+input,
+textarea {
+  border: 1px solid #dbdbdb;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background: transparent;
+  width: 300px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.hide {
-  display: none;
 }
